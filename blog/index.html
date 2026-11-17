@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fffdfa" />
+    <meta name="description" content="Kinomi Designからのお知らせ、ブランドづくりやWeb制作に役立つ情報をお届けします。" />
+    <title>ブログ・お知らせ｜Kinomi Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../site.css" />
+    <script src="../site.js" defer></script>
+    <script src="./blog.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header inner-header">
+      <a class="brand-logo" href="../index.html#top" aria-label="Kinomi Design ホーム"><img src="../assets/logo.png" alt="Kinomi Design" /></a>
+      <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span></button>
+      <nav class="site-nav" id="primary-navigation" aria-label="メインメニュー">
+        <a href="../index.html#top">HOME</a><a href="../services.html">サービス</a><a href="../pricing.html">料金</a><a href="./" aria-current="page">ブログ</a><a href="../index.html#plans">プラン</a><a href="../index.html#concept">ABOUT</a><a href="../services.html#consultation">無料相談</a>
+      </nav>
+      <a class="header-contact" href="../services.html#consultation"><svg viewBox="0 0 20 16" aria-hidden="true"><rect x="1" y="1" width="18" height="14" rx="1.5"></rect><path d="m2 3 8 6 8-6"></path></svg>無料相談について</a>
+    </header>
+
+    <main class="inner-main">
+      <section class="page-hero">
+        <img src="../assets/concept.webp" alt="" aria-hidden="true" />
+        <div class="page-hero-copy">
+          <p class="kicker">JOURNAL & NEWS</p>
+          <h1>ブログ・お知らせ</h1>
+          <p>ブランドづくりやWeb活用のヒント、Kinomi Designからのお知らせをお届けします。</p>
+        </div>
+      </section>
+
+      <section class="blog-content" aria-labelledby="blog-list-title">
+        <div class="blog-toolbar">
+          <div><p class="kicker">LATEST ARTICLES</p><h2 id="blog-list-title">新着記事</h2></div>
+          <p class="blog-status" id="blog-status" role="status" aria-live="polite">記事を読み込んでいます。</p>
+        </div>
+        <div class="blog-grid" id="blog-list"></div>
+        <nav class="blog-pagination" id="blog-pagination" aria-label="ブログ一覧ページ送り" hidden>
+          <button type="button" id="blog-previous">新しい記事</button>
+          <span id="blog-page-indicator" aria-live="polite"></span>
+          <button type="button" id="blog-next">古い記事</button>
+        </nav>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><a class="brand-logo" href="../index.html#top" aria-label="Kinomi Design ホーム"><img src="../assets/logo.png" alt="Kinomi Design" /></a><p>ブランドを作り、育てる。<br />ブランド設計×WEBデザイン×印刷物デザイン×マーケティング</p></div>
+      <div class="footer-links"><nav aria-label="フッターメニュー"><a href="../index.html#top">HOME</a><a href="../services.html">サービス</a><a href="../pricing.html">料金</a><a href="./" aria-current="page">ブログ</a><a href="../index.html#plans">プラン</a><a href="../index.html#concept">ABOUT</a><a href="../services.html#consultation">無料相談</a></nav><p>© Kinomi Design. All Rights Reserved.</p></div>
+    </footer>
+  </body>
+</html>
